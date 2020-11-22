@@ -1,5 +1,13 @@
 const body = document.getElementsByTagName('div');
-console.log(body);
  sidebar =()=> {
-     body.item(0).classList.toggle ('sidebar-expand');
-}
+     body.item(1).classList.toggle('sidebar-expand');
+
+    }
+
+
+
+
+
+
+    
+

@@ -48,6 +48,7 @@
 }
 .post-create input[type=file]{
     border: 2px solid var(--txt-color);
+    outline: none;
     padding: 5px;
     border-radius: 10px;
     width:90% ;
