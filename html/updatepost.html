@@ -15,7 +15,7 @@
 
     <!-- css file -->
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/user.css">
+    <link rel="stylesheet" href="/css/post.css">
     <!-- end of css file  -->
     <title>admin panel</title>
     <script src="/js/index.js"></script>
@@ -87,7 +87,8 @@
               <li class="sidebar-item">
                 <a href="/html/index.html" class="sidebar-link ">
                     <div class="sidebar-icon">
-                       <i class="fas fa-tachometer-alt"></i>
+                 <i class="fas fa-tachometer-alt"></i>
+
                     </div>
                     <span>
                         Dashboard
@@ -95,7 +96,7 @@
                 </a>
 
             </li>  <li class="sidebar-item">
-                <a href="/html/user.html" class="sidebar-link active">
+                <a href="/html/user.html" class="sidebar-link ">
                     <div class="sidebar-icon">
                         <i class="fas fa-users "></i>
                     </div>
@@ -105,7 +106,7 @@
                 </a>
 
             </li>  
-              <li class="sidebar-item">
+             <li class="sidebar-item">
                 <a href="/html/createuser.html" class="sidebar-link ">
                     <div class="sidebar-icon">
                      <i class="fas fa-user-plus"></i>
@@ -116,19 +117,19 @@
                 </a>
 
             </li> 
-               <li class="sidebar-item">
-                <a href="/html/post.html" class="sidebar-link ">
+            <li class="sidebar-item">
+                <a href="/html/post.html" class="sidebar-link">
                     <div class="sidebar-icon">
                       <i class="fas fa-book-reader"></i>
                     </div>
                     <span>
-                    All posts
+                                        All posts
 
                     </span>
                 </a>
 
             </li>
-            <li class="sidebar-item">
+              <li class="sidebar-item">
                 <a href="/html/createpost.html" class="sidebar-link ">
                     <div class="sidebar-icon">
                  <i class="fas fa-book-medical"></i>
@@ -139,8 +140,8 @@
                 </a>
 
             </li> 
-               <li class="sidebar-item">
-                <a href="/html/updatepost.html" class="sidebar-link ">
+              <li class="sidebar-item">
+                <a href="/html/updatepost.html" class="sidebar-link active ">
                     <div class="sidebar-icon">
                 <i class="fas fa-edit"></i>
                     </div>
@@ -149,7 +150,7 @@
                     </span>
                 </a>
 
-            </li>
+            </li> 
              <li class="sidebar-item">
                 <a href="/html/question.html" class="sidebar-link">
                     <div class="sidebar-icon">
@@ -177,30 +178,32 @@
     </div>
     <!--end of side bar side bar  -->
 <div class="main-content">
-<div class="all-users">
-    <h1 class="h1"> All users</h1><br>
-    <table class="all-user-info">
 
-<tr class="user-header">
-    <th class="header">Name</th>
-    <th class="header">email</th>
-    <th class="header" colspan="2">Action</th>
-</tr>
-<tr class="user-list">
-    <td class="list">Robert NIYITANGA</td>
-    <td class="list">robz@gmail.com</td>
- <td class="list "> <a class="edit" href="">Update</a> </td>
-    <td class="list"> <a  class=" delete" href="">Delete</a></td>
-</tr>
-<tr class="user-list">
-    <td class="list">Robert NIYITANGA</td>
-    <td class="list">robz@gmail.com</td>
-    <td class="list "> <a class="edit" href="">Update</a> </td>
-    <td class="list"> <a  class=" delete" href="">Delete</a></td>
-</tr>
-    </table>
+<div class="create-new-post">
+    <h1 class="h1">Update post</h1>
+    <form action="" class="post-create">
+
+    <label for="title">
+        Title
+        <input type="text" name="title">
+
+    </label>
+    
+    <label for="body">
+        Body
+    <textarea name="body" id="" cols="30" rows="10"></textarea>
+
+    </label>
+       <label for="image">
+        Image
+        <input type="file" name="image">
+
+    </label>
+    <label for="button">
+        <button type="submit"> Update</button>
+    </label>
+    </form>
 </div>
-
 </div>
 
     <!-- main content of admin panel -->
