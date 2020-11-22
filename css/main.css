@@ -24,7 +24,7 @@
     bottom: 0;
     top: 0;
     height: 100vh;
-    background: var(--light-color) url(/img/Bubble-Loading-Gif/64x64.gif) no-repeat center;
+    background: var(--light-color) url(/img/35.gif) no-repeat center;
     z-index: 9999;
     display: flex;
     align-items: center;
