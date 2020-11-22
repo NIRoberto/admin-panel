@@ -19,6 +19,21 @@
     grid-template-rows: repeat(auto-fit,auto);
     grid-gap: 1em 1em;
 }
+@media (max-width:760px){
+   .all-posts{
+    grid-template-columns: 110% ;
+} 
+}
+@media (min-width:760px){
+   .all-posts{
+    grid-template-columns: 50% 50% ;
+} 
+}
+@media (min-width:960px){
+   .all-posts{
+    grid-template-columns: 30% 30% 30% ;
+} 
+}
 
 .all-posts .single-post{
     display: flex;
