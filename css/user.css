@@ -15,10 +15,14 @@
 .all-users{
     display: flex;
     align-items: center;
-    align-content: center;
     justify-content: center;
     flex-direction: column;
 
+    padding-bottom: 40vh;
+}
+.h1{
+    color: var(--txt-color);
+    text-align: center;
 }
 .all-users .h1,.create-new-user .h1{
     color: var(--txt-color);
@@ -28,6 +32,7 @@
     border-collapse: collapse;
 background-color: white;
 box-shadow: 2px 2px 12px rgb(0, 0, 0,0.1);
+
 }
 .all-user-info tr th{
 border-bottom: 1px solid rgb(201, 198, 198);
@@ -62,6 +67,7 @@ border-bottom: 1px solid rgb(201, 198, 198);
 }
 .create-new-user{
     padding-top: 3em;
+height: 100vh;
 
 }
 .create-new-user .user-create{
@@ -103,4 +109,32 @@ border-bottom: 1px solid rgb(201, 198, 198);
 }
 .user-create button:hover{
     background-color: #0e6fc4;
+}
+@media (max-width:600px){
+  .user-create  input[type=text]{
+    width:110% ;
+
+}
+.user-create label[for=button]{
+    width:110% ;
+
+}
+.user-create button{
+    width:110% ;
+    padding-left: 1em;
+ 
+  
+}  
+.user-create label[for=button]{
+    padding-top: 0.5em;
+    padding-bottom: 3em;
+    width: 100%;
+}
+.all-users{
+overflow-x: auto;
+align-items: flex-start;
+justify-content: flex-start;
+width: 120%;
+
+}
 }
