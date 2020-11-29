@@ -1,8 +1,28 @@
 const body = document.getElementsByTagName('div');
- sidebar =()=> {
-     body.item(1).classList.toggle('sidebar-expand');
+let humber_burg = document.querySelector('.fas');
+let burger = document.querySelector('.fa-times');
+console.log(humber_burg);
+   console.log(humber_burg.classList);
 
-    }
+// fas fa-times
+ console.log("hello")
+const link = document.querySelectorAll('.sidebar-link  span');
+ sidebar =()=> {
+   body.item(1).classList.toggle('sidebar-expand');
+   link.forEach((link, index) => {
+     if (link.style.animation) {
+       link.style.animation = '';
+     }else{
+       link.style.animation = `link 3s ease-in forwards`;
+
+       
+     }
+
+   })
+    humber_burg.classList.toggle('fa-times');
+
+}
+
 
 
 //  search input field

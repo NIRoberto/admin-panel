@@ -23,14 +23,14 @@
     bottom: 0;
     top: 0;
     height: 100vh;
-    background: var(--light-color) url(/img/35.gif) no-repeat center;
+    background: var(--light-color) url(/img/5.gif) no-repeat center;
     z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--txt-color);
-    animation:vanish 2s forwards;
-}
+    animation:vanish 4s forwards;
+} 
 @keyframes vanish{
    100% {
         opacity: 1;
@@ -86,7 +86,7 @@
         display: none;
     }
  #loading{
- background: var(--light-color) url(/img/20.gif) no-repeat center;
+ background: var(--light-color) url(/img/5.gif) no-repeat center;
 }
 }
 .search input{
@@ -117,7 +117,7 @@
 .profile img{
     height: 50px;
     width: 50px;
-border-radius: 50%;
+    border-radius: 50%;
 }
 
 .logo{
@@ -161,7 +161,7 @@ border-radius: 50%;
 
 }
 .notification-drop{
-display: none;
+    display: none;
 
     list-style: none;
     /* display: flex; */
@@ -249,12 +249,14 @@ text-transform: capitalize;
 }
 .sidebar-expand .side-bar{
     width: 12rem;
-    transition: 0.5s;
+    transition: 1s;
+    z-index: 2;
+    
 }
 .sidebar-expand .main-content{
-    margin-left: 184px;
+    margin-left: 150px;
     position: absolute;
-    transition: 0.5s;
+    transition: 1s;
 
 }
 .sidebar-expand span{
@@ -291,6 +293,19 @@ text-transform: capitalize;
     display: flex;
     text-decoration: none;
     align-items: center;
+  
+}
+@keyframes link {
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
 }
 .sidebar-item i{
     font-size: 1.3em;
@@ -317,16 +332,28 @@ position: relative;
         font-size: 1rem;
           left: 30%;
     }
+    .sidebar-expand .main-content{
+    margin-left: 0px;
+    position: absolute;
+    transition: 0.5s;
+
+   }  
  
-    .sidebar-item i{
-    font-size: 1.3em;
-  position: absolute;
-  left: 20%;
-  top: 10%;
-    color: var(--light-color);
- transform: translate(-10%,-10%);
+   
+.sidebar-link{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    animation: link 2s 2s forwards ;
+}
+@keyframes link {
+    0%{
+        opacity: 0;
 
-
+    }
+    100%{
+        opacity: 1;
+    }
 }
 }
 /* main wrapper */
@@ -347,6 +374,7 @@ position: relative;
    grid-template-columns: repeat(3,30% 30% 30%);
    grid-template-rows: repeat(auto-fit,100%);
    grid-gap: 1em 1em;
+   padding-left: 3em;
     }
     @media (max-width:600px){
        .row{
@@ -414,6 +442,8 @@ align-items: center;
 .status{
     display: flex;
 align-items: center;
+padding-left: 3em;
+
 }
 .table{
 border-collapse: collapse;
@@ -421,7 +451,6 @@ background: white;
 box-shadow: var(--shadow);
 padding-top: 3em;
 margin-top: 3em;
-
 
 }
 .table-row{
