@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="/css/question.css">
     <!-- end of css file  -->
     <title>admin panel</title>
-    <script src="/js/index.js"></script>
+    <script src="/js/index.js" defer></script>
+    <script src="/js/pagination.js" defer></script>
+
 
 </head>
 <body >
@@ -179,8 +181,14 @@
     </div>
     <!--end of side bar side bar  -->
 <div class="main-content">
-<div class="questions-section">
-    <h1 class="title">All questions</h1>
+  <div class="not-found"> <h5></h5></div>
+
+    <div class="title">
+    <h1 class="titl">All questions</h1>
+
+    </div>
+
+<div class="questions-section" id="questions">
     <div class="questions">
         <div class="fullname">
        <div class="name">
@@ -195,79 +203,43 @@
         </div>
        <div class="actions">
            <div class="edit"><a href="#" class="edit">Update</a></div>
-           <div class="Delete"><a href="" class="delete">delete</a></div>
+           <div class="Delete"><a href="#" class="delete">delete</a></div>
 
        </div>
     <!-- <div class="answer"><a href="#" class="answer"> <i class="fas fa-comment-edit"></i>Answer</a></div> -->
 
     </div>
-        <div class="questions">
+     <div class="questions">
         <div class="fullname">
        <div class="name">
-         dev ed
+         Robert
         </div>
        <div class="date">
-         2020/12/12
+         2020/12/124
       </div>
         </div>
         <div class="question">
-            I want you to build  a portfolio I will pay you all amount you will want.
+          I good job Robert !
+          
         </div>
        <div class="actions">
            <div class="edit"><a href="#" class="edit">Update</a></div>
-           <div class="Delete"><a href="" class="delete">delete</a></div>
-
-       </div>
-    <!-- <div class="answer"><a href="#" class="answer"> <i class="fas fa-comment-edit"></i>Answer</a></div> -->
-
-    </div>    <div class="questions">
-        <div class="fullname">
-       <div class="name">
-         dev ed
-        </div>
-       <div class="date">
-         2020/12/12
-      </div>
-        </div>
-        <div class="question">
-            I want you to build  a portfolio I will pay you all amount you will want.
-        </div>
-       <div class="actions">
-           <div class="edit"><a href="#" class="edit">Update</a></div>
-           <div class="Delete"><a href="" class="delete">delete</a></div>
+           <div class="Delete"><a href="#" class="delete">delete</a></div>
 
        </div>
     <!-- <div class="answer"><a href="#" class="answer"> <i class="fas fa-comment-edit"></i>Answer</a></div> -->
 
     </div>
-        <div class="questions">
-        <div class="fullname">
-       <div class="name">
-         dev ed
-        </div>
-       <div class="date">
-         2020/12/12
-      </div>
-        </div>
-        <div class="question">
-            I want you to build  a portfolio I will pay you all amount you will want.
-        </div>
-       <div class="actions">
-           <div class="edit"><a href="#" class="edit">Update</a></div>
-           <div class="Delete"><a href="" class="delete">delete</a></div>
-
-       </div>
-    <!-- <div class="answer"><a href="#" class="answer"> <i class="fas fa-comment-edit"></i>Answer</a></div> -->
-
     </div>
-    <div class="paginnation">
-        <div class="pages"><a href="#" class="page">1</a></div>
-        <div class="pages"><a href="# " class="page">2</a></div>
-        <div class="pages"><a href="#"class="page">3</a></div>
-        <div class="pages"><a href="#"class="page">4</a></div>
+   <div class="pagination">
+        <div class="pages "><a href="#" class="page P">Previous</a></div>
+       
+        <div class="pages  page-active"><a href="#" class="page F">1</a></div>
+        <div class="pages SH"><a href="# " class="page S">2</a></div>
+        <div class="pages T1H"><a href="#"class="page T">3</a></div>
+        <div class="pages THH"><a href="#"class="page TH">4</a></div>
+         <div class="pages NH"><a href="#" class="page N"> Next </a></div>
     </div>
-    
-</div>
 
 </div>
 

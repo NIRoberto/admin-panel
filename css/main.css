@@ -9,7 +9,6 @@
   --update:green;
 
 }
-
 *{
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
@@ -30,7 +29,7 @@
     align-items: center;
     justify-content: center;
     color: var(--txt-color);
-    animation:vanish 4s forwards;
+    animation:vanish 2s forwards;
 }
 @keyframes vanish{
    100% {
@@ -75,12 +74,20 @@
     color: var(--txt-color);
 }
 .right{
-    margin-left: auto;
+    margin-left:27%;
 }
 .search{
     margin: auto;
     width: 50%;
     position: relative;
+}
+@media (max-width:600px){
+    .search{
+        display: none;
+    }
+ #loading{
+ background: var(--light-color) url(/img/20.gif) no-repeat center;
+}
 }
 .search input{
     width: 100%;
@@ -88,8 +95,8 @@
     border-radius: 25px;
     background-color: white;
     border: 2px solid var(--txt-color);
-height: 70%;
-padding: 8px 25px 8px 15px;
+    height: 70%;
+    padding: 8px 25px 8px 15px;
     
 }
 .search i{
@@ -214,7 +221,7 @@ font-size: 1.3em;
 text-transform: capitalize;
 
 }
-/* end of notificaction drop down */
+/* end of notification drop down */
 
 
 /* sidebar */
@@ -224,19 +231,12 @@ text-transform: capitalize;
     background-color:var(--bg-primary);
     box-shadow: var(--shadow);
     width: 5rem;
-
-
-    height: 100vh;
-
-   width: 5rem;
-
     position: fixed;
     margin-top: 0;
     top:4.7em;
     left: 0;
     z-index: 0;
     bottom: 0;
-
     padding-top: 3em;
     bottom: 0;
     /* padding-top: 3em; */
@@ -270,7 +270,7 @@ text-transform: capitalize;
     align-items: center;
     background-color:var(--bg-primary);
 
-    height: 100vh;
+
 }
 .sidebar-item{
  width: 100%;
@@ -312,6 +312,23 @@ min-width: 82px;
 height: 50px;
 position: relative;
 }
+@media (max-width:600px){
+    .sidebar-item i{
+        font-size: 1rem;
+          left: 30%;
+    }
+ 
+    .sidebar-item i{
+    font-size: 1.3em;
+  position: absolute;
+  left: 20%;
+  top: 10%;
+    color: var(--light-color);
+ transform: translate(-10%,-10%);
+
+
+}
+}
 /* main wrapper */
 .main-content{
     padding: 100px 12px 0px ;
@@ -321,7 +338,8 @@ position: relative;
     background-color: white;
     position: absolute;
     left: 0;
-    height: 100vh;
+    right: 0;
+
 
 }
 .row{
@@ -335,9 +353,11 @@ position: relative;
 
   display: flex;
   flex-direction: column;
+  width: 110%;
+  padding-left: 1em;
     } 
     }
-       @media (min-width:600px){
+@media (min-width:600px){
        .row{
 
   display: flex;
@@ -418,6 +438,9 @@ margin-top: 3em;
     .side-bar{
         width: 0px;
       
+    }
+    .status{
+        overflow: auto;
     }
     .main-content{
         margin-left: 0px;

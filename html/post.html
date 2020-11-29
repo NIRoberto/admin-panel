@@ -17,14 +17,15 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/allpost.css">
     <!-- end of css file  -->
-    <title>admin panel</title>
-    <script src="/js/index.js"></script>
+    <title>All post</title>
+    <script src="/js/index.js" defer></script>
 
 </head>
 <body >
-    <div class="admin">
-         <div id="loading">
+<div id="loading">
     </div>
+    <div class="admin">
+  
  <!-- admin dashboard nav bar -->
 <div class="nav-bar">
 <ul class="navbar-item">
@@ -37,7 +38,7 @@
    <i class="my-logo">Robert</i>
     </a></li>
 </ul>
-<form action="" class="search">
+<form  class="search" id="seach-bar">
     <input type="text" name="search" id="search">
     <i class="fas fa-search"></i>
 </form>
@@ -180,15 +181,16 @@
     </div>
     <!--end of side bar side bar  -->
 <div class="main-content">
-
+  <div class="not-found"> <h5></h5></div>
 <div class="all-posts">
+  
   <div class="single-post">
        <div class="img">
 <img src="/img/my journey.png" alt="blog image">
        </div>
-       <div class="header"><a href="#" class="title">My journey through The ATLP</a></div>
+       <div class="header"><a href="#" class="title">How to learn Javascript faster.</a></div>
   <div class="body">
-      <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, possimus?</p>
+      <p class="text">JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm.</p>
   </div>
   <div class="button">
       <div class="date">
@@ -208,7 +210,7 @@
        </div>
        <div class="header"><a href="#" class="title">My journey through The ATLP</a></div>
   <div class="body">
-      <p class="text" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, possimus?</p>
+      <p class="text" >“It's an ongoing process to keep up with the changing landscape of programmable technologies,” Ng says. “[But] if your goal is to quickly learn the basics of coding, your career could be started in as little as three months.”</p>
   </div>
   <div class="button">
       <div class="date">

@@ -86,3 +86,27 @@
     background-color: #1a67aa;
     transition: 0.5s;
 }
+@media (max-width:600px){
+ 
+.post-create{
+
+    padding-left: 1em;
+}
+.post-create label input[type=text] {
+    width:110% ;
+}
+.post-create input[type=file]{
+  width:110% ;
+ }
+.post-create textarea{
+    width: 110%;
+ }
+.post-create button{
+       width: 110%;
+}
+.create-new-post .h1{
+  
+    font-size: 1.7em;
+    padding-left: 1em;
+}
+}
