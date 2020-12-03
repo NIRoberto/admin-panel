@@ -83,10 +83,10 @@
 }
 @media (max-width:600px){
     .search{
-        display: none;
+    display: none;
     }
  #loading{
- background: var(--light-color) url(/img/5.gif) no-repeat center;
+    background: var(--light-color) url(/img/5.gif) no-repeat center;
 }
 }
 .search input{
